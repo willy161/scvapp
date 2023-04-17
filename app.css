@@ -1,0 +1,48 @@
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(201, 50, 133);
+    padding: 36px;
+  }
+  .logo {
+    position: relative;
+    bottom: 20px;
+    right: 30px;
+    
+  }
+  .logo img {
+    position: absolute;
+    float: left;
+    width: 300px;
+    margin-top: -40px;
+    margin-left: -5px;
+    
+  }
+  
+  .title {
+    text-align: left;
+    color: white;
+    font-size: 24px;
+  }
+  
+  .title h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 32px;
+  }
