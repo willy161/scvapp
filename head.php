@@ -8,11 +8,15 @@
 </head>
 <body>
 <header>
+
   <div class="logo">
     <img src="slike/scvlogo_page-0001.png" alt="Your logo">
   </div>
+
   <div class="title">
     <h1>HOME</h1>
    
   </div>
+
 </header>
+
