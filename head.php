@@ -14,7 +14,17 @@
   </div>
 
   <div class="title">
-    <h1>HOME</h1>
+    <h1><?php 
+          if(isset($_SESSION['username']))
+          {
+              echo 'Pozdravljen, '.$_SESSION['username'];
+          }
+          else
+          {
+              echo 'Pozdravljen, gost';
+          }
+          ?>
+    </h1>
    
   </div>
 
