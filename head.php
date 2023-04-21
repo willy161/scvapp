@@ -18,10 +18,11 @@
           if(isset($_SESSION['username']))
           {
               echo 'Pozdravljen, '.$_SESSION['username'];
+              echo '   <a href="logout.php">Odjava</a>';
           }
           else
           {
-              echo 'Pozdravljen, gost';
+              echo 'Pozdravljen, gost   <a href="login.php">Prijava</a>';
           }
           ?>
     </h1>
