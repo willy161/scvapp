@@ -5,6 +5,7 @@
         <title>Domov</title>
       <meta charset="UTF-8">
       <link rel="stylesheet" href="app.css">
+      <link rel="stylesheet" href="login.css">
 </head>
 <body>
 <header>
