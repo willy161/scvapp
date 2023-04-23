@@ -26,12 +26,12 @@ else
 		$_SESSION['password']=$row['password'];
         $_SESSION['admin']=$row['admin'];
         $_SESSION['sola_id']=$row['sola_id'];
-       header("Location:home.php") ;
+       header("Location:admin.php") ;
     
     }
     else {
-            // preusmeritev na prijavo
-    //header("Refresh:3;URL=login.php");
+            
+    header("Refresh:3;URL=login.php");
 	echo 'Login Unsuccessful';   
 	}
 }

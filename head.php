@@ -3,6 +3,17 @@
 <html lang="sl">
     <head>
         <title>Domov</title>
+        <script>
+    // Get the "msg" parameter from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const msg = urlParams.get('msg');
+
+    // Check if the "msg" parameter is set
+    if (msg) {
+      // Display an alert with the message
+      alert(msg);
+    }
+  </script>
       <meta charset="UTF-8">
       <link rel="stylesheet" href="app.css">
       <link rel="stylesheet" href="login.css">
