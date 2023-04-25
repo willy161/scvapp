@@ -10,11 +10,14 @@
 <script>
 const images = document.querySelectorAll('.footer-images img');
 const header = document.querySelector('header');
+const login = document.querySelector('#log')
 
 images.forEach(image => {
   image.addEventListener('click', () => {
     const color = image.getAttribute('data-color');
     header.style.backgroundColor = color;
+    login.style.backgroundColor = color;
+
   });
 });
 </script>

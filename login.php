@@ -7,11 +7,11 @@
 <label><b>Username
         </b>
         </label>
-    <input type="text" name="username" id="name" placeholder="Enter username..."><br>
+    <input type="text" name="username" id="name" placeholder=""><br>
     <label><b>Password
         </b>
         </label>
-    <input type="password" name="password" id="pass" placeholder="Enter password..."><br>
+    <input type="password" name="password" id="pass" placeholder=""><br>
     <input type="submit" value="Log In" id="log" name="sub4">
 </div>
 </form>
