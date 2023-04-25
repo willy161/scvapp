@@ -12,7 +12,7 @@
         </b>
         </label>
     <input type="password" name="password" id="pass" placeholder=""><br>
-    <input type="submit" value="Log In" id="log" name="sub4">
+    <input type="submit" value="LOG IN" id="log" name="sub4">
 </div>
 </form>
 </div>
