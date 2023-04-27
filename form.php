@@ -1,5 +1,8 @@
 <?php require_once('head.php')?>
     <form id="obiskform" method="post" action ="confirm.php">
+        <div class="form-main">
+        <div class="form">
+            <label>Izpolnite podatke za prijavo</label><br/>
     <input type="text" name="imesole" placeholder="Ime sole"><br/>
     <input type="text" name="imeucitelja" placeholder="Ime učitelja"><br/>
     <input type="number" name="stucencev" placeholder="Število učencev"><br/>
@@ -13,6 +16,9 @@
         }
         ?>
     </select><br />
-    <input type="submit" name="sub" value="Pošlji">
+    <input type="submit" id="submit" name="sub" value="Pošlji">
+    
+    </div>
+    </div>
     </form>
 <?php require_once('foot.php')?>

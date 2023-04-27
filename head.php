@@ -17,6 +17,7 @@
       <meta charset="UTF-8">
       <link rel="stylesheet" href="app.css">
       <link rel="stylesheet" href="login.css">
+      <link rel="stylesheet" href="form.css">
 </head>
 <body>
 <header>
