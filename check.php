@@ -24,7 +24,7 @@ else
         $_SESSION['id']=$row['id'];
 		$_SESSION['username']=$row ['username'];
 		$_SESSION['password']=$row['password'];
-        $_SESSION['admin']=$row['admin'];
+        $_SESSION['master']=$row['master'];
         $_SESSION['sola_id']=$row['sola_id'];
        header("Location:admin.php") ;
     
