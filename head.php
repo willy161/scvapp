@@ -31,7 +31,13 @@
           if(isset($_SESSION['username']))
           {
               echo 'Pozdravljen, '.$_SESSION['username'];
+              if($_SESSION['master']==="1")
+              {
+                  echo '   <a href="dodajanjedatuma.php">Dodaj datum</a>';
+                  echo '   <a href="pregled.php">Pregled</a>';
+              }
               echo '   <a href="logout.php">Odjava</a>';
+              
           }
           else
           {

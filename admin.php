@@ -25,7 +25,7 @@
         if($_SESSION['sola_id']==="1")
         {
             echo '<h1>Obiski</h1>';
-            $sql = "SELECT * FROM obisk WHERE accepted = 1 AND sola_id = 1";
+            $sql = "SELECT * FROM obisk WHERE accepted = 1 AND sola_id = 1 AND ucitelj_id IS NULL";
             $result = mysqli_query($link, $sql);
             while($row = mysqli_fetch_array($result))
             {
@@ -37,7 +37,7 @@
                 $result2 = mysqli_query($link, $sql2);
                 $row2 = mysqli_fetch_array($result2);
                 echo '<h3>'.$row2['datum'].'</h3>';
-                echo '<form method="POST" action="dodajanjeucitelja.php"><input type="number" value="'.$row['id'].'" name="id" hidden>';
+                echo '<form method="POST" action="dodajucitelja.php"><input type="number" value="'.$row['id'].'" name="id" hidden>';
                 echo '<select name="ucitelj">';
                 $sql3 = "SELECT * FROM ucitelji WHERE sola_id = 1";
                 $result3 = mysqli_query($link, $sql3);
@@ -52,7 +52,7 @@
         if($_SESSION['sola_id']==="2")
         {
             echo '<h1>Obiski</h1>';
-            $sql = "SELECT * FROM obisk WHERE accepted = 1 AND sola_id = 2";
+            $sql = "SELECT * FROM obisk WHERE accepted = 1 AND sola_id = 2 ucitelj_id IS NULL";
             $result = mysqli_query($link, $sql);
             while($row = mysqli_fetch_array($result))
             {
@@ -64,7 +64,7 @@
                 $result2 = mysqli_query($link, $sql2);
                 $row2 = mysqli_fetch_array($result2);
                 echo '<h3>'.$row2['datum'].'</h3>';
-                echo '<form method="POST" action="dodajanjeucitelja.php"><input type="number" value="'.$row['id'].'" name="id" hidden>';
+                echo '<form method="POST" action="dodajucitelja.php"><input type="number" value="'.$row['id'].'" name="id" hidden>';
                 echo '<select name="ucitelj">';
                 $sql3 = "SELECT * FROM ucitelji WHERE sola_id = 2";
                 $result3 = mysqli_query($link, $sql3);
@@ -79,7 +79,7 @@
         if($_SESSION['sola_id']==="3")
         {
             echo '<h1>Obiski</h1>';
-            $sql = "SELECT * FROM obisk WHERE accepted = 1 AND sola_id = 3";
+            $sql = "SELECT * FROM obisk WHERE accepted = 1 AND sola_id = 3 ucitelj_id IS NULL";
             $result = mysqli_query($link, $sql);
             while($row = mysqli_fetch_array($result))
             {
@@ -91,7 +91,7 @@
                 $result2 = mysqli_query($link, $sql2);
                 $row2 = mysqli_fetch_array($result2);
                 echo '<h3>'.$row2['datum'].'</h3>';
-                echo '<form method="POST" action="dodajanjeucitelja.php"><input type="number" value="'.$row['id'].'" name="id" hidden>';
+                echo '<form method="POST" action="dodajucitelja.php"><input type="number" value="'.$row['id'].'" name="id" hidden>';
                 echo '<select name="ucitelj">';
                 $sql3 = "SELECT * FROM ucitelji WHERE sola_id = 3";
                 $result3 = mysqli_query($link, $sql3);
@@ -106,7 +106,7 @@
         if($_SESSION['sola_id']==="4")
         {
             echo '<h1>Obiski</h1>';
-            $sql = "SELECT * FROM obisk WHERE accepted = 1 AND sola_id = 4";
+            $sql = "SELECT * FROM obisk WHERE accepted = 1 AND sola_id = 4 ucitelj_id IS NULL";
             $result = mysqli_query($link, $sql);
             while($row = mysqli_fetch_array($result))
             {
@@ -118,7 +118,7 @@
                 $result2 = mysqli_query($link, $sql2);
                 $row2 = mysqli_fetch_array($result2);
                 echo '<h3>'.$row2['datum'].'</h3>';
-                echo '<form method="POST" action="dodajanjeucitelja.php"><input type="number" value="'.$row['id'].'" name="id" hidden>';
+                echo '<form method="POST" action="dodajaucitelja.php"><input type="number" value="'.$row['id'].'" name="id" hidden>';
                 echo '<select name="ucitelj">';
                 $sql3 = "SELECT * FROM ucitelji WHERE sola_id = 4";
                 $result3 = mysqli_query($link, $sql3);

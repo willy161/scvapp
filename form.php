@@ -5,6 +5,7 @@
             <label>Izpolnite podatke za prijavo</label><br/>
     <input type="text" name="imesole" placeholder="Ime sole"><br/>
     <input type="text" name="imeucitelja" placeholder="Ime učitelja"><br/>
+    <input type="email" name="email" placeholder="Email"><br/>
     <input type="number" name="stucencev" placeholder="Število učencev"><br/>
     <select name="datumobiska" class="input"  form="obiskform"><br/>
         <?php require_once 'povezava.php';
