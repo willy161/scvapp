@@ -3,7 +3,7 @@
 <?php 
     if($_SESSION['master']==="1")
     {
-        $sql = "SELECT * FROM obisk WHERE accepted = 0";
+        $sql = "SELECT * FROM obisk WHERE accepted = 0 ORDER BY datum_id ASC";
         $result = mysqli_query($link, $sql);
         while($row = mysqli_fetch_array($result))
         {
@@ -25,7 +25,7 @@
         if($_SESSION['sola_id']==="1")
         {
             echo '<h1>Obiski</h1>';
-            $sql = "SELECT * FROM obisk WHERE accepted = 1 AND sola_id = 1 AND ucitelj_id IS NULL";
+            $sql = "SELECT * FROM obisk WHERE accepted = 1 AND sola_id = 1 AND ucitelj_id IS NULL ORDER BY datum_id ASC";
             $result = mysqli_query($link, $sql);
             while($row = mysqli_fetch_array($result))
             {
@@ -52,7 +52,7 @@
         if($_SESSION['sola_id']==="2")
         {
             echo '<h1>Obiski</h1>';
-            $sql = "SELECT * FROM obisk WHERE accepted = 1 AND sola_id = 2 ucitelj_id IS NULL";
+            $sql = "SELECT * FROM obisk WHERE accepted = 1 AND sola_id = 2 ucitelj_id IS NULL ORDER BY datum_id ASC";
             $result = mysqli_query($link, $sql);
             while($row = mysqli_fetch_array($result))
             {
@@ -79,7 +79,7 @@
         if($_SESSION['sola_id']==="3")
         {
             echo '<h1>Obiski</h1>';
-            $sql = "SELECT * FROM obisk WHERE accepted = 1 AND sola_id = 3 ucitelj_id IS NULL";
+            $sql = "SELECT * FROM obisk WHERE accepted = 1 AND sola_id = 3 ucitelj_id IS NULL ORDER BY datum_id ASC";
             $result = mysqli_query($link, $sql);
             while($row = mysqli_fetch_array($result))
             {
@@ -106,7 +106,7 @@
         if($_SESSION['sola_id']==="4")
         {
             echo '<h1>Obiski</h1>';
-            $sql = "SELECT * FROM obisk WHERE accepted = 1 AND sola_id = 4 ucitelj_id IS NULL";
+            $sql = "SELECT * FROM obisk WHERE accepted = 1 AND sola_id = 4 ucitelj_id IS NULL ORDER BY datum_id ASC";
             $result = mysqli_query($link, $sql);
             while($row = mysqli_fetch_array($result))
             {

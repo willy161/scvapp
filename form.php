@@ -1,5 +1,7 @@
-<?php require_once('head.php')?>
+<?php require_once('head.php');
+$_SESSION['sola_id'] = 5;?>
     <form id="obiskform" method="post" action ="confirm.php">
+        <?php echo $_SESSION['sola_id'];?>
         <div class="form-main">
         <div class="form">
             <label>Izpolnite podatke za prijavo</label><br/>
@@ -9,7 +11,7 @@
     <input type="number" name="stucencev" placeholder="Število učencev"><br/>
     <select name="datumobiska" class="input"  form="obiskform"><br/>
         <?php require_once 'povezava.php';
-        $sql="SELECT * FROM datumi WHERE taken = 0";
+        $sql="SELECT * FROM datumi WHERE taken = 0 ORDER BY datum ASC";
         $result=mysqli_query($link, $sql);
         while($row=mysqli_fetch_array($result))
         {

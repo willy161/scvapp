@@ -2,7 +2,7 @@
 <?php require_once 'povezava.php';
     if($_SESSION['master']==="1")
     {
-        $sql = "SELECT * FROM obisk WHERE accepted = 1 AND ucitelj_id IS NOT NULL";
+        $sql = "SELECT * FROM obisk WHERE accepted = 1 AND ucitelj_id IS NOT NULL ORDER BY datum_id ASC";
         $result = mysqli_query($link, $sql);
         while($row = mysqli_fetch_array($result))
         {

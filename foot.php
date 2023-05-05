@@ -12,11 +12,28 @@ const images = document.querySelectorAll('.footer-images img');
 const header = document.querySelector('header');
 const login = document.querySelector('#log')
 
+// Define a color-ID mapping
+const colorIds = {
+  "#a6ce39": 1,
+  "#0096db": 2,
+  "#f359a1": 3,
+  "#fece00": 4
+};
 images.forEach(image => {
   image.addEventListener('click', () => {
     const color = image.getAttribute('data-color');
     header.style.backgroundColor = color;
-    login.style.backgroundColor = color;
+    //login.style.backgroundColor = color;
+
+     // Get the ID corresponding to the selected color
+     const id = colorIds[color];
+    
+    // Add an AJAX request to update the session variable
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'update_session.php');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.send(`sola_id=${id}`);
+
 
   });
 });
