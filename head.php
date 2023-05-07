@@ -25,7 +25,7 @@
 <header>
 
   <div class="logo">
-    <img src="slike/scvlogo_page-0001.png" alt="Your logo">
+    <a href="form.php"><img src="slike/scvlogo_page-0001.png" alt="Your logo"></a>
   </div>
 
   <div class="title">

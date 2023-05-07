@@ -14,10 +14,10 @@ const login = document.querySelector('#log')
 
 // Define a color-ID mapping
 const colorIds = {
-  "#a6ce39": 1,
-  "#0096db": 2,
+  "#a6ce39": 4,
+  "#0096db": 1,
   "#f359a1": 3,
-  "#fece00": 4
+  "#fece00": 2
 };
 images.forEach(image => {
   image.addEventListener('click', () => {
