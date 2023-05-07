@@ -20,6 +20,7 @@
       <link rel="stylesheet" href="form.css">
       <link rel="stylesheet" href="dodajdatum.css">
       <link rel="stylesheet" href="pregled.css">
+      <link rel="stylesheet" href="admin.css">
 </head>
 <body>
 <header>
@@ -32,7 +33,7 @@
     <h1><?php 
           if(isset($_SESSION['username']))
           {
-              echo 'Pozdravljen, '.$_SESSION['username'];
+              echo 'Pozdravljen, <a href="admin.php" style="text-decoration:none; color:white;">'  .$_SESSION['username'].'</a>';
               if($_SESSION['master']==="1")
               {
                   echo '   <a href="dodajanjedatuma.php">Dodaj datum</a>';
