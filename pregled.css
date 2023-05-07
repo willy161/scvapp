@@ -2,7 +2,9 @@
     box-sizing: border-box;
 }
 
-
+.container{
+    margin:10px 30px 10px 30px;
+  }
 #naslov_pregled h2{
     margin-top:50px;
     color:  rgb(201, 50, 133);;
@@ -11,7 +13,7 @@
 }
 .pregled{
     display:flex;
-  justify-content: center;
+    margin-left:300px;
   margin-top: 50px;
   margin-bottom:10px;
 }
@@ -52,3 +54,4 @@
     
     padding-right:10px;
 }
+

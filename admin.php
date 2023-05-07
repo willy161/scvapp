@@ -50,6 +50,7 @@
                 $row2 = mysqli_fetch_array($result2);
                 echo '<td id="brez">'.$row2['datum'].'</td>';
                 echo '<form method="POST" action="dodajucitelja.php"><input type="number" value="'.$row['id'].'" name="id" hidden>';
+                echo '<div class="custom-select">';
                 echo '<select name="ucitelj">';
                 $sql3 = "SELECT * FROM ucitelji WHERE sola_id = 1";
                 $result3 = mysqli_query($link, $sql3);
@@ -57,7 +58,10 @@
                 {
                     echo '<option value="'.$row3['id'].'">'.$row3['ime'].' '.$row3['priimek'].'</option>';
                 }
-                echo '</select><input type="submit" value="Dodaj Učitelja"></form>';
+            
+                echo '</select><input type="submit" id="log1" value="Dodaj Učitelja"></form>';
+                
+                echo '</div>';
                 echo '</tr>';
                 echo '</table>';
                 echo '</div>';

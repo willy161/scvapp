@@ -1,3 +1,4 @@
+
 <?php require_once 'povezava.php';
 session_start();
 $ml=mysqli_escape_string($link,$_POST['username']);
@@ -31,6 +32,8 @@ else
     else {
             
     header("Refresh:3;URL=login.php");
-	echo 'Login Unsuccessful';   
+    echo '<div class="message">';
+	echo '<p>Login Unsuccessful</p>';  
+    echo '</div>';
 	}
 }

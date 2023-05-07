@@ -7,6 +7,7 @@
         echo '<div id="naslov_pregled">';
         echo '<h2>Potrjeni prihodi</h2>';
         echo '</div>';
+        echo '<div class="container">';
         while($row = mysqli_fetch_array($result))
         {
             echo '<div class="pregled">';
@@ -30,6 +31,7 @@
             echo '</div>';
           
         }
+        echo '</div>';
     }
     else
     {
