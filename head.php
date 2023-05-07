@@ -18,6 +18,8 @@
       <link rel="stylesheet" href="app.css">
       <link rel="stylesheet" href="login.css">
       <link rel="stylesheet" href="form.css">
+      <link rel="stylesheet" href="dodajdatum.css">
+      <link rel="stylesheet" href="pregled.css">
 </head>
 <body>
 <header>

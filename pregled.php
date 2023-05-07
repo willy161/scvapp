@@ -6,7 +6,8 @@
         $result = mysqli_query($link, $sql);
         while($row = mysqli_fetch_array($result))
         {
-            echo '<div class="obisk">';
+            echo '<div class="pregled">';
+            echo '<div class="obisk_pregled">';
             echo '<h2>'.$row['ime_sole'].'</h2>';
             echo '<h3>'.$row['ime_mentor'].'</h3>';
             echo '<h3>'.$row['st_ucencev'].'</h3>';
@@ -19,6 +20,7 @@
             $result3 = mysqli_query($link, $sql3);
             $row3 = mysqli_fetch_array($result3);
             echo '<h3>'.$row3['ime'].' '.$row3['priimek'].'</h3>';
+            echo '</div>';
             echo '</div>';
         }
     }
